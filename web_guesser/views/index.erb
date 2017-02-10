@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <style>
+      body {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+  	<form>
+      <input type='text' name='guess' />
+      <input type='submit' value='Guess!' />
+    </form>
+    <p>
+      <%= message %> 
+      <%=
+      if (correct)
+        "The secret number is #{num}" 
+      end
+      %>
+    </p>
+  </body>
+</html>
